@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Droppable - Default functionality</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+      .draggable {
+        width: 100px;
+        height: 100px;
+        padding: 0.5em;
+        float: left;
+        margin: 10px 10px 10px 0;
+      }
+      .droppable {
+        width: 150px;
+        height: 150px;
+        padding: 0.5em;
+        float: left;
+        margin: 10px;
+      }
+    </style>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+
+      <Draggable :figures="shuffledFigures" :answers="shuffledAnswers" />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
